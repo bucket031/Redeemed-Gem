@@ -1,0 +1,15 @@
+name: RedeemedGem
+version: 1.0.0
+main: com.redeemed.RedeemedGemPlugin
+api-version: '1.21'
+description: Redeemed Gem add-on for BlissPlugin (Bliss SMP).
+softdepend: [BlissPlugin]
+commands:
+  rg:
+    description: Redeemed Gem admin command.
+    usage: /rg <start <player>|trial <1-3> start <player>|set <player> <stage>|config|trust <add|remove|list|clear> [player]>
+    aliases: [redeemedgem]
+permissions:
+  redeemedgem.admin:
+    description: Use /rg admin subcommands.
+    default: op
