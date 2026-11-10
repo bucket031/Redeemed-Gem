@@ -1,0 +1,26 @@
+# Redeemed Gem config. Everything under shackles/slam/limitless/general is editable in-game with /rg config.
+shackles:
+  charges: 3
+  ground-seconds: 1.5
+  damage-hearts: 1.5
+  recharge-seconds: 90
+slam:
+  radius: 10
+  damage-hearts: 5
+  fling-distance: 10
+  cooldown-seconds: 130
+limitless:
+  radius: 8
+  hearts-taken: 4
+  lock-radius: 2
+  lock-seconds: 5
+  duration-seconds: 20
+  cooldown-seconds: 120
+  armor-mend-per-second: 4
+general:
+  double-click-ms: 600
+# How /rg start finds the Bliss gem a player spawns with (BlissPlugin is obfuscated, so we match by item name).
+# An item is treated as a Bliss gem if its display name contains one of the names AND the required word.
+bliss-gem-detect:
+  names: [strength, fire, wealth, speed, puff, astra, life, flux]
+  required-word: gem
